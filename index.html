@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LilD - Segurança no Trabalho</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-shield-alt"></i>
+                <span>LilD</span>
+            </div>
+            <nav class="nav">
+                <button class="nav-btn active" data-page="home">
+                    <i class="fas fa-home"></i> Início
+                </button>
+                <button class="nav-btn" data-page="seguranca">
+                    <i class="fas fa-hard-hat"></i> Segurança Ocupacional
+                </button>
+                <button class="nav-btn" data-page="topicos">
+                    <i class="fas fa-book"></i> Tópicos em Destaque
+                </button>
+                <button class="nav-btn" data-page="recursos">
+                    <i class="fas fa-tools"></i> Recursos Úteis
+                </button>
+                <button class="nav-btn" data-page="contato">
+                    <i class="fas fa-envelope"></i> Contato
+                </button>
+                <button class="nav-btn" data-page="developers">
+                    <i class="fas fa-code"></i> Developers
+                </button>
+            </nav>
+            <button class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Home Page -->
+        <section id="home" class="page active">
+            <div class="hero">
+                <div class="hero-content">
+                    <h1>Segurança no Trabalho</h1>
+                    <p>Proteção, Prevenção e Bem-estar para Todos</p>
+                    <button class="btn btn-primary" onclick="navigateTo('seguranca')">
+                        Saiba Mais
+                    </button>
+                </div>
+                <div class="hero-image">
+                    <i class="fas fa-hard-hat"></i>
+                </div>
+            </div>
+
+            <!-- Statistics Section -->
+            <section class="stats">
+                <div class="stat-card">
+                    <div class="stat-number">23</div>
+                    <div class="stat-label">Acidentes de trabalho anuais (OIT)</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">60</div>
+                    <div class="stat-label">Redução com treinamento adequado</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">100</div>
+                    <div class="stat-label">Direito à segurança</div>
+                </div>
+            </section>
+
+            <!-- Featured Content -->
+            <section class="featured">
+                <h2>Explore Nossos Conteúdos</h2>
+                <div class="featured-grid">
+                    <div class="featured-card" onclick="navigateTo('seguranca')">
+                        <div class="featured-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Segurança Ocupacional</h3>
+                        <p>Conheça os fundamentos e práticas essenciais para manter ambientes seguros</p>
+                        <button class="btn-secondary">Explorar</button>
+                    </div>
+                    <div class="featured-card" onclick="navigateTo('topicos')">
+                        <div class="featured-icon">
+                            <i class="fas fa-layer-group"></i>
+                        </div>
+                        <h3>Tópicos em Destaque</h3>
+                        <p>Aprofunde seus conhecimentos nos pilares da segurança no trabalho</p>
+                        <button class="btn-secondary">Descobrir</button>
+                    </div>
+                    <div class="featured-card" onclick="navigateTo('recursos')">
+                        <div class="featured-icon">
+                            <i class="fas fa-link"></i>
+                        </div>
+                        <h3>Recursos Úteis</h3>
+                        <p>Ferramentas, documentos e referências para sua segurança</p>
+                        <button class="btn-secondary">Acessar</button>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-- Segurança Ocupacional Page -->
+        <section id="seguranca" class="page">
+            <div class="page-header">
+                <h1>Segurança Ocupacional</h1>
+                <p>Fundamentos e práticas essenciais</p>
+            </div>
+            <div class="content-wrapper">
+                <article class="article">
+                    <h2>O que é Segurança Ocupacional?</h2>
+                    <p>A segurança ocupacional é um direito fundamental de todo trabalhador. Um ambiente de trabalho seguro aumenta a produtividade, reduz custos com afastamentos e, principalmente, protege vidas.</p>
+                    
+                    <h3>Pilares Fundamentais</h3>
+                    <ul class="content-list">
+                        <li><strong>Proteção:</strong> Implementação de medidas de proteção física e pessoal</li>
+                        <li><strong>Prevenção:</strong> Identificação e eliminação de riscos antes que causem danos</li>
+                        <li><strong>Preparação:</strong> Treinamento e conscientização contínua dos colaboradores</li>
+                        <li><strong>Legislação:</strong> Cumprimento das normas regulamentadoras vigentes</li>
+                    </ul>
+
+                    <h3>Responsabilidades</h3>
+                    <div class="responsibility-grid">
+                        <div class="responsibility-card">
+                            <h4>Empregadores</h4>
+                            <p>Fornecer ambiente seguro, EPIs, treinamento e cumprir regulamentações</p>
+                        </div>
+                        <div class="responsibility-card">
+                            <h4>Trabalhadores</h4>
+                            <p>Usar EPIs corretamente, seguir procedimentos e reportar riscos</p>
+                        </div>
+                        <div class="responsibility-card">
+                            <h4>Governo</h4>
+                            <p>Estabelecer e fiscalizar regulamentações de segurança</p>
+                        </div>
+                    </div>
+
+                    <h3>Benefícios Comprovados</h3>
+                    <ul class="content-list">
+                        <li>Redução de 60% em acidentes com treinamento adequado</li>
+                        <li>Diminuição de custos com afastamentos e indenizações</li>
+                        <li>Aumento de produtividade e moral da equipe</li>
+                        <li>Melhoria da imagem e reputação da empresa</li>
+                        <li>Cumprimento das obrigações legais</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <!-- Tópicos em Destaque Page -->
+        <section id="topicos" class="page">
+            <div class="page-header">
+                <h1>Tópicos em Destaque</h1>
+                <p>Aprofunde seus conhecimentos</p>
+            </div>
+            <div class="content-wrapper">
+                <div class="topics-grid">
+                    <div class="topic-card">
+                        <div class="topic-icon">
+                            <i class="fas fa-head-side-virus"></i>
+                        </div>
+                        <h3>Saúde Mental no Trabalho</h3>
+                        <p>Bem-estar psicológico, stress ocupacional e prevenção de síndrome de burnout. A saúde mental é tão importante quanto a física para um ambiente seguro e produtivo.</p>
+                        <ul class="topic-points">
+                            <li>Reconhecimento de sinais de alerta</li>
+                            <li>Programas de apoio e acompanhamento</li>
+                            <li>Cultura organizacional saudável</li>
+                        </ul>
+                    </div>
+
+                    <div class="topic-card">
+                        <div class="topic-icon">
+                            <i class="fas fa-shield-virus"></i>
+                        </div>
+                        <h3>Prevenção de Acidentes</h3>
+                        <p>Estratégias e protocolos para evitar acidentes no ambiente de trabalho. Inclui identificação de riscos, implementação de controles e cultura de prevenção.</p>
+                        <ul class="topic-points">
+                            <li>Análise de riscos (APR)</li>
+                            <li>Equipamentos de proteção individual</li>
+                            <li>Procedimentos de emergência</li>
+                        </ul>
+                    </div>
+
+                    <div class="topic-card">
+                        <div class="topic-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Treinamento e Capacitação</h3>
+                        <p>Programas de educação contínua para conscientização sobre segurança. Conhecimento é a melhor defesa contra acidentes e incidentes.</p>
+                        <ul class="topic-points">
+                            <li>Treinamento inicial de segurança</li>
+                            <li>Reciclagem periódica</li>
+                            <li>Simulados e exercícios práticos</li>
+                        </ul>
+                    </div>
+
+                    <div class="topic-card">
+                        <div class="topic-icon">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <h3>Saúde Ocupacional</h3>
+                        <p>Monitoramento da saúde dos trabalhadores e prevenção de doenças ocupacionais. Programas de promoção de saúde no ambiente corporativo.</p>
+                        <ul class="topic-points">
+                            <li>Exames periódicos</li>
+                            <li>Prevenção de LER/DORT</li>
+                            <li>Programas de vacinação</li>
+                        </ul>
+                    </div>
+
+                    <div class="topic-card">
+                        <div class="topic-icon">
+                            <i class="fas fa-fire"></i>
+                        </div>
+                        <h3>Segurança Contra Incêndios</h3>
+                        <p>Medidas de prevenção, combate e evacuação em caso de incêndios. Um plano de segurança contra incêndios bem estruturado salva vidas.</p>
+                        <ul class="topic-points">
+                            <li>Sistemas de detecção</li>
+                            <li>Equipamentos de combate ao fogo</li>
+                            <li>Plano de evacuação</li>
+                        </ul>
+                    </div>
+
+                    <div class="topic-card">
+                        <div class="topic-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>Equipamento de Proteção</h3>
+                        <p>Uso correto e manutenção de EPIs (Equipamentos de Proteção Individual). Cada função requer proteção específica e adequada.</p>
+                        <ul class="topic-points">
+                            <li>Tipos de EPIs</li>
+                            <li>Seleção e ajuste correto</li>
+                            <li>Limpeza e manutenção</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recursos Úteis Page -->
+        <section id="recursos" class="page">
+            <div class="page-header">
+                <h1>Recursos Úteis</h1>
+                <p>Ferramentas e documentos para sua segurança</p>
+            </div>
+            <div class="content-wrapper">
+                <div class="resources-grid">
+                    <div class="resource-card">
+                        <div class="resource-icon">
+                            <i class="fas fa-file-pdf"></i>
+                        </div>
+                        <h3>Normas Regulamentadoras</h3>
+                        <p>Acesse as Normas Regulamentadoras (NRs) que regem a segurança no trabalho no Brasil</p>
+                        <ul class="resource-list">
+                            <li><a href="#" target="_blank">NR 1 - Disposições Gerais</a></li>
+                            <li><a href="#" target="_blank">NR 4 - SESMT</a></li>
+                            <li><a href="#" target="_blank">NR 5 - CIPA</a></li>
+                            <li><a href="#" target="_blank">NR 6 - EPIs</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="resource-card">
+                        <div class="resource-icon">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <h3>Vídeos Educativos</h3>
+                        <p>Conteúdo audiovisual sobre boas práticas de segurança no trabalho</p>
+                        <ul class="resource-list">
+                            <li><a href="#" target="_blank">Como usar EPIs corretamente</a></li>
+                            <li><a href="#" target="_blank">Primeiros Socorros</a></li>
+                            <li><a href="#" target="_blank">Prevenção de Acidentes</a></li>
+                            <li><a href="#" target="_blank">Ergonomia no Trabalho</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="resource-card">
+                        <div class="resource-icon">
+                            <i class="fas fa-download"></i>
+                        </div>
+                        <h3>Modelos e Templates</h3>
+                        <p>Documentos e formulários prontos para uso na sua organização</p>
+                        <ul class="resource-list">
+                            <li><a href="#" target="_blank">Checklist de Segurança</a></li>
+                            <li><a href="#" target="_blank">APR - Análise Preliminar de Risco</a></li>
+                            <li><a href="#" target="_blank">Relatório de Acidente</a></li>
+                            <li><a href="#" target="_blank">Plano de Emergência</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="resource-card">
+                        <div class="resource-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Cursos Online</h3>
+                        <p>Programas de capacitação em segurança do trabalho</p>
+                        <ul class="resource-list">
+                            <li><a href="#" target="_blank">Fundamentos de Segurança</a></li>
+                            <li><a href="#" target="_blank">Gestão de Riscos Ocupacionais</a></li>
+                            <li><a href="#" target="_blank">Investigação de Acidentes</a></li>
+                            <li><a href="#" target="_blank">Liderança em Segurança</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="resource-card">
+                        <div class="resource-icon">
+                            <i class="fas fa-link"></i>
+                        </div>
+                        <h3>Links Úteis</h3>
+                        <p>Referências e órgãos relacionados à segurança do trabalho</p>
+                        <ul class="resource-list">
+                            <li><a href="#" target="_blank">Ministério do Trabalho</a></li>
+                            <li><a href="#" target="_blank">ABNT - Associação Brasileira de Normas Técnicas</a></li>
+                            <li><a href="#" target="_blank">CNI - Confederação Nacional da Indústria</a></li>
+                            <li><a href="#" target="_blank">INMETRO</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="resource-card">
+                        <div class="resource-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3>Contatos Importantes</h3>
+                        <p>Telefones e informações de emergência</p>
+                        <ul class="resource-list">
+                            <li>Emergência: 192</li>
+                            <li>Polícia: 190</li>
+                            <li>Bombeiros: 193</li>
+                            <li>Defesa Civil: 199</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contato Page -->
+        <section id="contato" class="page">
+            <div class="page-header">
+                <h1>Entre em Contato</h1>
+                <p>Dúvidas? Estamos aqui para ajudar</p>
+            </div>
+            <div class="content-wrapper">
+                <div class="contact-container">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nome Completo</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Telefone</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Assunto</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Selecione um assunto</option>
+                                <option value="duvida">Dúvida</option>
+                                <option value="sugestao">Sugestão</option>
+                                <option value="reclamacao">Reclamação</option>
+                                <option value="parceria">Parceria</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensagem</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                    </form>
+                    <div class="contact-info">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Endereço</h4>
+                                <p>São Paulo, SP - Brasil</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>contato@lild.com.br</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Telefone</h4>
+                                <p>+55 (11) 3000-0000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Developers Page -->
+        <section id="developers" class="page">
+            <div class="page-header">
+                <h1>Para Desenvolvedores</h1>
+                <p>Informações técnicas e documentação</p>
+            </div>
+            <div class="content-wrapper">
+                <article class="article">
+                    <h2>Bem-vindo ao LilD!</h2>
+                    <p>Esta é uma plataforma de código aberto dedicada à educação e promoção de segurança no trabalho. Contribuições são bem-vindas!</p>
+
+                    <h3>Tecnologias Utilizadas</h3>
+                    <div class="tech-grid">
+                        <div class="tech-card">
+                            <i class="fab fa-html5"></i>
+                            <h4>HTML5</h4>
+                            <p>Estrutura semântica e acessível</p>
+                        </div>
+                        <div class="tech-card">
+                            <i class="fab fa-css3"></i>
+                            <h4>CSS3</h4>
+                            <p>Design responsivo e moderno</p>
+                        </div>
+                        <div class="tech-card">
+                            <i class="fab fa-js"></i>
+                            <h4>JavaScript</h4>
+                            <p>Interatividade e funcionalidades dinâmicas</p>
+                        </div>
+                        <div class="tech-card">
+                            <i class="fas fa-code-branch"></i>
+                            <h4>Git</h4>
+                            <p>Controle de versão com Git e GitHub</p>
+                        </div>
+                    </div>
+
+                    <h3>Como Começar</h3>
+                    <div class="code-block">
+                        <pre><code># Clone o repositório
+git clone https://github.com/Lild-Cloud/LilD.git
+cd LilD
+
+# Abra no navegador
+open index.html
+
+# Ou use um servidor local
+python -m http.server 8000
+# Acesse http://localhost:8000</code></pre>
+                    </div>
+
+                    <h3>Estrutura do Projeto</h3>
+                    <div class="code-block">
+                        <pre><code>LilD/
+├── index.html           # Página principal
+├── assets/
+│   ├── css/
+│   │   └── style.css    # Estilos principais
+│   ├── js/
+│   │   └── script.js    # Lógica JavaScript
+│   └── images/          # Imagens e recursos
+├── README.md            # Documentação
+└── LICENSE              # Licença MIT</code></pre>
+                    </div>
+
+                    <h3>Como Contribuir</h3>
+                    <ol class="content-list" style="list-style-type: decimal;">
+                        <li>Faça um Fork do repositório</li>
+                        <li>Crie uma branch para sua feature (<code>git checkout -b feature/AmazingFeature</code>)</li>
+                        <li>Commit suas mudanças (<code>git commit -m 'Add some AmazingFeature'</code>)</li>
+                        <li>Push para a branch (<code>git push origin feature/AmazingFeature</code>)</li>
+                        <li>Abra um Pull Request</li>
+                    </ol>
+
+                    <h3>API e Endpoints</h3>
+                    <p>Documentação de endpoints disponíveis (para versões futuras com backend):</p>
+                    <div class="code-block">
+                        <pre><code>GET /api/topicos           # Lista todos os tópicos
+GET /api/topicos/:id       # Obtém um tópico específico
+GET /api/recursos          # Lista recursos disponíveis
+POST /api/contato          # Envia mensagem de contato</code></pre>
+                    </div>
+
+                    <h3>Diretrizes de Desenvolvimento</h3>
+                    <ul class="content-list">
+                        <li><strong>Acessibilidade:</strong> Garanta que o site seja acessível (WCAG 2.1)</li>
+                        <li><strong>Responsividade:</strong> Teste em múltiplos dispositivos</li>
+                        <li><strong>Performance:</strong> Mantenha o site otimizado</li>
+                        <li><strong>Segurança:</strong> Siga práticas seguras de desenvolvimento</li>
+                        <li><strong>Código Limpo:</strong> Use convenções e padrões consistentes</li>
+                    </ul>
+
+                    <h3>Stack Recomendado</h3>
+                    <ul class="content-list">
+                        <li><strong>Editor:</strong> VS Code, WebStorm ou similar</li>
+                        <li><strong>Versionamento:</strong> Git com GitHub</li>
+                        <li><strong>Teste:</strong> Jest, Cypress para testes automatizados</li>
+                        <li><strong>Deploy:</strong> GitHub Pages, Vercel, Netlify</li>
+                    </ul>
+
+                    <h3>Licença</h3>
+                    <p>Este projeto está licenciado sob a Licença MIT - veja o arquivo <code>LICENSE</code> para detalhes.</p>
+
+                    <h3>Suporte</h3>
+                    <p>Encontrou um bug? Tem uma ideia? Abra uma <strong>Issue</strong> no GitHub!</p>
+                    <p><a href="https://github.com/Lild-Cloud/LilD/issues" target="_blank" class="btn btn-secondary">Reportar Problema</a></p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>LilD</h4>
+                    <p>Plataforma dedicada à segurança e bem-estar no trabalho</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Navegação</h4>
+                    <ul>
+                        <li><a href="#" onclick="navigateTo('home'); return false;">Início</a></li>
+                        <li><a href="#" onclick="navigateTo('seguranca'); return false;">Segurança</a></li>
+                        <li><a href="#" onclick="navigateTo('topicos'); return false;">Tópicos</a></li>
+                        <li><a href="#" onclick="navigateTo('contato'); return false;">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Redes Sociais</h4>
+                    <div class="social-links">
+                        <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Seu email" required>
+                        <button type="submit" class="btn-small">Inscrever</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 LilD - Segurança no Trabalho. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

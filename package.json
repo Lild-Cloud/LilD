@@ -1,0 +1,39 @@
+{
+  "name": "LilD - Segurança no Trabalho",
+  "version": "1.0.0",
+  "description": "Plataforma web completa e profissional sobre segurança no trabalho",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "build": "echo 'Build script - ready for production'",
+    "test": "echo 'Test script - ready for testing'",
+    "lint": "echo 'Lint script - check code quality'"
+  },
+  "keywords": [
+    "segurança",
+    "trabalho",
+    "ocupacional",
+    "saúde",
+    "bem-estar",
+    "prevenção",
+    "educação"
+  ],
+  "author": "Lild-Cloud",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Lild-Cloud/LilD.git"
+  },
+  "homepage": "https://github.com/Lild-Cloud/LilD",
+  "bugs": {
+    "url": "https://github.com/Lild-Cloud/LilD/issues"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

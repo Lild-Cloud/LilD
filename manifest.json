@@ -1,0 +1,81 @@
+{
+  "name": "LilD - Segurança no Trabalho",
+  "short_name": "LilD",
+  "description": "Plataforma educativa sobre segurança e bem-estar no trabalho",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#ffffff",
+  "theme_color": "#D4A574",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'><rect fill='%23D4A574' width='192' height='192'/><text x='50%' y='50%' font-size='80' font-weight='bold' text-anchor='middle' dy='.3em' fill='white' font-family='Arial'>L</text></svg>",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><rect fill='%23D4A574' width='512' height='512'/><path d='M256 50c113.6 0 206 92.4 206 206s-92.4 206-206 206S50 369.6 50 256 142.4 50 256 50zm0 32c-96 0-174 78-174 174s78 174 174 174 174-78 174-174-78-174-174-174z' fill='white'/><text x='50%' y='50%' font-size='250' font-weight='bold' text-anchor='middle' dy='.3em' fill='white' font-family='Arial'>L</text></svg>",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["education", "productivity"],
+  "screenshots": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 540 720'><rect fill='%23F5F7FA' width='540' height='720'/><rect fill='%232C3E50' width='540' height='100'/><text x='270' y='60' font-size='32' font-weight='bold' text-anchor='middle' fill='white'>LilD</text></svg>",
+      "sizes": "540x720",
+      "type": "image/svg+xml"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Segurança Ocupacional",
+      "short_name": "Segurança",
+      "description": "Aprenda sobre segurança ocupacional",
+      "url": "/?page=seguranca",
+      "icons": [
+        {
+          "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 96 96'><rect fill='%23D4A574' width='96' height='96'/><path d='M48 20L30 28v16c0 18 18 32 18 32s18-14 18-32V28l-18-8z' fill='white'/></svg>",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Tópicos em Destaque",
+      "short_name": "Tópicos",
+      "description": "Explore tópicos em destaque",
+      "url": "/?page=topicos",
+      "icons": [
+        {
+          "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 96 96'><rect fill='%23D4A574' width='96' height='96'/><path d='M24 28h48v12H24z M24 48h48v12H24z M24 68h48v12H24z' fill='white'/></svg>",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Recursos Úteis",
+      "short_name": "Recursos",
+      "description": "Acesse recursos e ferramentas",
+      "url": "/?page=recursos",
+      "icons": [
+        {
+          "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 96 96'><rect fill='%23D4A574' width='96' height='96'/><path d='M32 20h32v12H32z M28 36h40v8H28z M28 48h40v8H28z M28 60h40v8H28z' fill='white'/></svg>",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ],
+  "share_target": {
+    "action": "/",
+    "method": "POST",
+    "enctype": "application/x-www-form-urlencoded",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url"
+    }
+  }
+}

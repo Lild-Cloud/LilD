@@ -1,106 +1,142 @@
+<!-- HTML Meta Tags -->
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LilD - Segurança no Trabalho</title>
+    <meta name="description" content="LilD - Plataforma completa sobre segurança no trabalho com informações, recursos e guias profissionais.">
+    <meta name="keywords" content="segurança no trabalho, ocupacional, saúde, prevenção, bem-estar">
+    <meta name="author" content="Lild-Cloud">
+    <meta name="theme-color" content="#D4A574">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="LilD - Segurança no Trabalho">
+    <meta property="og:description" content="Plataforma educativa e profissional sobre segurança ocupacional">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lild-cloud.github.io/LilD/">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%23D4A574' width='100' height='100'/><path d='M50 20L32 28v16c0 16 18 28 18 28s18-12 18-28V28l-18-8z' fill='white'/></svg>">
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVJkEZSMUkrQ6usKGstRvDxJS+Bnp1PO9Jd9nFsGZ9/7MtYnBZv5VSEwYvQ1T60+2z53m1fs/kA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- Preload Fonts -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+    <!-- Analytics (Opcional) -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script> -->
+
+    <title>LilD - Segurança no Trabalho | Proteção, Prevenção e Bem-estar</title>
 </head>
 <body>
+    <!-- Skip to Content Link for Accessibility -->
+    <a href="#main" class="skip-to-content">Ir para conteúdo principal</a>
+
     <!-- Navigation Header -->
-    <header class="header">
+    <header class="header" role="banner">
         <div class="container">
-            <div class="logo">
-                <i class="fas fa-shield-alt"></i>
+            <div class="logo" aria-label="LilD - Segurança no Trabalho">
+                <i class="fas fa-shield-alt" aria-hidden="true"></i>
                 <span>LilD</span>
             </div>
-            <nav class="nav">
-                <button class="nav-btn active" data-page="home">
-                    <i class="fas fa-home"></i> Início
+            
+            <nav class="nav" role="navigation" aria-label="Menu Principal">
+                <button class="nav-btn active" data-page="home" aria-label="Ir para página inicial">
+                    <i class="fas fa-home" aria-hidden="true"></i>
+                    <span>Início</span>
                 </button>
-                <button class="nav-btn" data-page="seguranca">
-                    <i class="fas fa-hard-hat"></i> Segurança Ocupacional
+                <button class="nav-btn" data-page="seguranca" aria-label="Ir para seção de segurança ocupacional">
+                    <i class="fas fa-hard-hat" aria-hidden="true"></i>
+                    <span>Segurança Ocupacional</span>
                 </button>
-                <button class="nav-btn" data-page="topicos">
-                    <i class="fas fa-book"></i> Tópicos em Destaque
+                <button class="nav-btn" data-page="topicos" aria-label="Ir para tópicos em destaque">
+                    <i class="fas fa-book" aria-hidden="true"></i>
+                    <span>Tópicos em Destaque</span>
                 </button>
-                <button class="nav-btn" data-page="recursos">
-                    <i class="fas fa-tools"></i> Recursos Úteis
+                <button class="nav-btn" data-page="recursos" aria-label="Ir para recursos úteis">
+                    <i class="fas fa-tools" aria-hidden="true"></i>
+                    <span>Recursos Úteis</span>
                 </button>
-                <button class="nav-btn" data-page="contato">
-                    <i class="fas fa-envelope"></i> Contato
+                <button class="nav-btn" data-page="contato" aria-label="Ir para página de contato">
+                    <i class="fas fa-envelope" aria-hidden="true"></i>
+                    <span>Contato</span>
                 </button>
-                <button class="nav-btn" data-page="developers">
-                    <i class="fas fa-code"></i> Developers
+                <button class="nav-btn" data-page="developers" aria-label="Ir para seção de desenvolvedores">
+                    <i class="fas fa-code" aria-hidden="true"></i>
+                    <span>Developers</span>
                 </button>
             </nav>
-            <button class="menu-toggle">
-                <i class="fas fa-bars"></i>
+
+            <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav">
+                <i class="fas fa-bars" aria-hidden="true"></i>
             </button>
         </div>
     </header>
 
     <!-- Main Content -->
-    <main class="main">
+    <main class="main" id="main" role="main">
         <!-- Home Page -->
         <section id="home" class="page active">
-            <div class="hero">
+            <div class="hero" role="region" aria-label="Hero section">
                 <div class="hero-content">
                     <h1>Segurança no Trabalho</h1>
                     <p>Proteção, Prevenção e Bem-estar para Todos</p>
-                    <button class="btn btn-primary" onclick="navigateTo('seguranca')">
+                    <button class="btn btn-primary" onclick="navigateTo('seguranca')" aria-label="Saiba mais sobre segurança ocupacional">
                         Saiba Mais
                     </button>
                 </div>
-                <div class="hero-image">
+                <div class="hero-image" aria-hidden="true">
                     <i class="fas fa-hard-hat"></i>
                 </div>
             </div>
 
             <!-- Statistics Section -->
-            <section class="stats">
+            <section class="stats" aria-label="Estatísticas de segurança no trabalho">
                 <div class="stat-card">
-                    <div class="stat-number">23</div>
+                    <div class="stat-number" aria-label="23 acidentes">23</div>
                     <div class="stat-label">Acidentes de trabalho anuais (OIT)</div>
                 </div>
                 <div class="stat-card">
-                    <div class="stat-number">60</div>
+                    <div class="stat-number" aria-label="60 por cento">60</div>
                     <div class="stat-label">Redução com treinamento adequado</div>
                 </div>
                 <div class="stat-card">
-                    <div class="stat-number">100</div>
+                    <div class="stat-number" aria-label="100 por cento">100</div>
                     <div class="stat-label">Direito à segurança</div>
                 </div>
             </section>
 
             <!-- Featured Content -->
-            <section class="featured">
+            <section class="featured" aria-label="Conteúdo em destaque">
                 <h2>Explore Nossos Conteúdos</h2>
                 <div class="featured-grid">
-                    <div class="featured-card" onclick="navigateTo('seguranca')">
-                        <div class="featured-icon">
+                    <div class="featured-card" onclick="navigateTo('seguranca')" role="button" tabindex="0" onkeypress="if(event.key==='Enter') navigateTo('seguranca')">
+                        <div class="featured-icon" aria-hidden="true">
                             <i class="fas fa-shield-alt"></i>
                         </div>
                         <h3>Segurança Ocupacional</h3>
                         <p>Conheça os fundamentos e práticas essenciais para manter ambientes seguros</p>
-                        <button class="btn-secondary">Explorar</button>
+                        <button class="btn-secondary" aria-label="Explorar segurança ocupacional">Explorar</button>
                     </div>
-                    <div class="featured-card" onclick="navigateTo('topicos')">
-                        <div class="featured-icon">
+                    <div class="featured-card" onclick="navigateTo('topicos')" role="button" tabindex="0" onkeypress="if(event.key==='Enter') navigateTo('topicos')">
+                        <div class="featured-icon" aria-hidden="true">
                             <i class="fas fa-layer-group"></i>
                         </div>
                         <h3>Tópicos em Destaque</h3>
                         <p>Aprofunde seus conhecimentos nos pilares da segurança no trabalho</p>
-                        <button class="btn-secondary">Descobrir</button>
+                        <button class="btn-secondary" aria-label="Descobrir tópicos">Descobrir</button>
                     </div>
-                    <div class="featured-card" onclick="navigateTo('recursos')">
-                        <div class="featured-icon">
+                    <div class="featured-card" onclick="navigateTo('recursos')" role="button" tabindex="0" onkeypress="if(event.key==='Enter') navigateTo('recursos')">
+                        <div class="featured-icon" aria-hidden="true">
                             <i class="fas fa-link"></i>
                         </div>
                         <h3>Recursos Úteis</h3>
                         <p>Ferramentas, documentos e referências para sua segurança</p>
-                        <button class="btn-secondary">Acessar</button>
+                        <button class="btn-secondary" aria-label="Acessar recursos">Acessar</button>
                     </div>
                 </div>
             </section>
@@ -162,7 +198,7 @@
             <div class="content-wrapper">
                 <div class="topics-grid">
                     <div class="topic-card">
-                        <div class="topic-icon">
+                        <div class="topic-icon" aria-hidden="true">
                             <i class="fas fa-head-side-virus"></i>
                         </div>
                         <h3>Saúde Mental no Trabalho</h3>
@@ -175,7 +211,7 @@
                     </div>
 
                     <div class="topic-card">
-                        <div class="topic-icon">
+                        <div class="topic-icon" aria-hidden="true">
                             <i class="fas fa-shield-virus"></i>
                         </div>
                         <h3>Prevenção de Acidentes</h3>
@@ -188,7 +224,7 @@
                     </div>
 
                     <div class="topic-card">
-                        <div class="topic-icon">
+                        <div class="topic-icon" aria-hidden="true">
                             <i class="fas fa-graduation-cap"></i>
                         </div>
                         <h3>Treinamento e Capacitação</h3>
@@ -201,7 +237,7 @@
                     </div>
 
                     <div class="topic-card">
-                        <div class="topic-icon">
+                        <div class="topic-icon" aria-hidden="true">
                             <i class="fas fa-heartbeat"></i>
                         </div>
                         <h3>Saúde Ocupacional</h3>
@@ -214,7 +250,7 @@
                     </div>
 
                     <div class="topic-card">
-                        <div class="topic-icon">
+                        <div class="topic-icon" aria-hidden="true">
                             <i class="fas fa-fire"></i>
                         </div>
                         <h3>Segurança Contra Incêndios</h3>
@@ -227,7 +263,7 @@
                     </div>
 
                     <div class="topic-card">
-                        <div class="topic-icon">
+                        <div class="topic-icon" aria-hidden="true">
                             <i class="fas fa-tools"></i>
                         </div>
                         <h3>Equipamento de Proteção</h3>
@@ -251,7 +287,7 @@
             <div class="content-wrapper">
                 <div class="resources-grid">
                     <div class="resource-card">
-                        <div class="resource-icon">
+                        <div class="resource-icon" aria-hidden="true">
                             <i class="fas fa-file-pdf"></i>
                         </div>
                         <h3>Normas Regulamentadoras</h3>
@@ -265,7 +301,7 @@
                     </div>
 
                     <div class="resource-card">
-                        <div class="resource-icon">
+                        <div class="resource-icon" aria-hidden="true">
                             <i class="fas fa-video"></i>
                         </div>
                         <h3>Vídeos Educativos</h3>
@@ -279,7 +315,7 @@
                     </div>
 
                     <div class="resource-card">
-                        <div class="resource-icon">
+                        <div class="resource-icon" aria-hidden="true">
                             <i class="fas fa-download"></i>
                         </div>
                         <h3>Modelos e Templates</h3>
@@ -293,7 +329,7 @@
                     </div>
 
                     <div class="resource-card">
-                        <div class="resource-icon">
+                        <div class="resource-icon" aria-hidden="true">
                             <i class="fas fa-graduation-cap"></i>
                         </div>
                         <h3>Cursos Online</h3>
@@ -307,7 +343,7 @@
                     </div>
 
                     <div class="resource-card">
-                        <div class="resource-icon">
+                        <div class="resource-icon" aria-hidden="true">
                             <i class="fas fa-link"></i>
                         </div>
                         <h3>Links Úteis</h3>
@@ -321,7 +357,7 @@
                     </div>
 
                     <div class="resource-card">
-                        <div class="resource-icon">
+                        <div class="resource-icon" aria-hidden="true">
                             <i class="fas fa-phone"></i>
                         </div>
                         <h3>Contatos Importantes</h3>
@@ -345,22 +381,22 @@
             </div>
             <div class="content-wrapper">
                 <div class="contact-container">
-                    <form class="contact-form">
+                    <form class="contact-form" novalidate>
                         <div class="form-group">
-                            <label for="name">Nome Completo</label>
-                            <input type="text" id="name" name="name" required>
+                            <label for="name">Nome Completo <span aria-label="obrigatório">*</span></label>
+                            <input type="text" id="name" name="name" required aria-required="true">
                         </div>
                         <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
+                            <label for="email">Email <span aria-label="obrigatório">*</span></label>
+                            <input type="email" id="email" name="email" required aria-required="true">
                         </div>
                         <div class="form-group">
                             <label for="phone">Telefone</label>
-                            <input type="tel" id="phone" name="phone">
+                            <input type="tel" id="phone" name="phone" aria-label="Telefone opcional">
                         </div>
                         <div class="form-group">
-                            <label for="subject">Assunto</label>
-                            <select id="subject" name="subject" required>
+                            <label for="subject">Assunto <span aria-label="obrigatório">*</span></label>
+                            <select id="subject" name="subject" required aria-required="true">
                                 <option value="">Selecione um assunto</option>
                                 <option value="duvida">Dúvida</option>
                                 <option value="sugestao">Sugestão</option>
@@ -369,31 +405,31 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="message">Mensagem</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <label for="message">Mensagem <span aria-label="obrigatório">*</span></label>
+                            <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
                     </form>
                     <div class="contact-info">
                         <div class="info-item">
-                            <i class="fas fa-map-marker-alt"></i>
+                            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
                             <div>
                                 <h4>Endereço</h4>
                                 <p>São Paulo, SP - Brasil</p>
                             </div>
                         </div>
                         <div class="info-item">
-                            <i class="fas fa-envelope"></i>
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
                             <div>
                                 <h4>Email</h4>
-                                <p>contato@lild.com.br</p>
+                                <p><a href="mailto:contato@lild.com.br">contato@lild.com.br</a></p>
                             </div>
                         </div>
                         <div class="info-item">
-                            <i class="fas fa-phone"></i>
+                            <i class="fas fa-phone" aria-hidden="true"></i>
                             <div>
                                 <h4>Telefone</h4>
-                                <p>+55 (11) 3000-0000</p>
+                                <p><a href="tel:+551130000000">+55 (11) 3000-0000</a></p>
                             </div>
                         </div>
                     </div>
@@ -415,22 +451,22 @@
                     <h3>Tecnologias Utilizadas</h3>
                     <div class="tech-grid">
                         <div class="tech-card">
-                            <i class="fab fa-html5"></i>
+                            <i class="fab fa-html5" aria-hidden="true"></i>
                             <h4>HTML5</h4>
                             <p>Estrutura semântica e acessível</p>
                         </div>
                         <div class="tech-card">
-                            <i class="fab fa-css3"></i>
+                            <i class="fab fa-css3" aria-hidden="true"></i>
                             <h4>CSS3</h4>
                             <p>Design responsivo e moderno</p>
                         </div>
                         <div class="tech-card">
-                            <i class="fab fa-js"></i>
+                            <i class="fab fa-js" aria-hidden="true"></i>
                             <h4>JavaScript</h4>
                             <p>Interatividade e funcionalidades dinâmicas</p>
                         </div>
                         <div class="tech-card">
-                            <i class="fas fa-code-branch"></i>
+                            <i class="fas fa-code-branch" aria-hidden="true"></i>
                             <h4>Git</h4>
                             <p>Controle de versão com Git e GitHub</p>
                         </div>
@@ -473,15 +509,6 @@ python -m http.server 8000
                         <li>Abra um Pull Request</li>
                     </ol>
 
-                    <h3>API e Endpoints</h3>
-                    <p>Documentação de endpoints disponíveis (para versões futuras com backend):</p>
-                    <div class="code-block">
-                        <pre><code>GET /api/topicos           # Lista todos os tópicos
-GET /api/topicos/:id       # Obtém um tópico específico
-GET /api/recursos          # Lista recursos disponíveis
-POST /api/contato          # Envia mensagem de contato</code></pre>
-                    </div>
-
                     <h3>Diretrizes de Desenvolvimento</h3>
                     <ul class="content-list">
                         <li><strong>Acessibilidade:</strong> Garanta que o site seja acessível (WCAG 2.1)</li>
@@ -490,17 +517,6 @@ POST /api/contato          # Envia mensagem de contato</code></pre>
                         <li><strong>Segurança:</strong> Siga práticas seguras de desenvolvimento</li>
                         <li><strong>Código Limpo:</strong> Use convenções e padrões consistentes</li>
                     </ul>
-
-                    <h3>Stack Recomendado</h3>
-                    <ul class="content-list">
-                        <li><strong>Editor:</strong> VS Code, WebStorm ou similar</li>
-                        <li><strong>Versionamento:</strong> Git com GitHub</li>
-                        <li><strong>Teste:</strong> Jest, Cypress para testes automatizados</li>
-                        <li><strong>Deploy:</strong> GitHub Pages, Vercel, Netlify</li>
-                    </ul>
-
-                    <h3>Licença</h3>
-                    <p>Este projeto está licenciado sob a Licença MIT - veja o arquivo <code>LICENSE</code> para detalhes.</p>
 
                     <h3>Suporte</h3>
                     <p>Encontrou um bug? Tem uma ideia? Abra uma <strong>Issue</strong> no GitHub!</p>
@@ -511,7 +527,7 @@ POST /api/contato          # Envia mensagem de contato</code></pre>
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
@@ -530,17 +546,17 @@ POST /api/contato          # Envia mensagem de contato</code></pre>
                 <div class="footer-section">
                     <h4>Redes Sociais</h4>
                     <div class="social-links">
-                        <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
-                        <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" title="GitHub" aria-label="Visite nosso GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+                        <a href="#" title="LinkedIn" aria-label="Visite nosso LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                        <a href="#" title="Twitter" aria-label="Visite nosso Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#" title="Instagram" aria-label="Visite nosso Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
                     </div>
                 </div>
                 <div class="footer-section">
                     <h4>Newsletter</h4>
-                    <form class="newsletter-form">
-                        <input type="email" placeholder="Seu email" required>
-                        <button type="submit" class="btn-small">Inscrever</button>
+                    <form class="newsletter-form" novalidate>
+                        <input type="email" placeholder="Seu email" required aria-label="Insira seu email para se inscrever">
+                        <button type="submit" class="btn-small" aria-label="Se inscrever na newsletter">Inscrever</button>
                     </form>
                 </div>
             </div>
@@ -550,6 +566,24 @@ POST /api/contato          # Envia mensagem de contato</code></pre>
         </div>
     </footer>
 
-    <script src="assets/js/script.js"></script>
+    <!-- CSS for skip to content link -->
+    <style>
+        .skip-to-content {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #000;
+            color: #fff;
+            padding: 8px;
+            z-index: 100;
+        }
+
+        .skip-to-content:focus {
+            top: 0;
+        }
+    </style>
+
+    <!-- JavaScript -->
+    <script src="assets/js/script.js" defer></script>
 </body>
 </html>
